@@ -2,28 +2,68 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Cormorant Unicase' rel='stylesheet'>
     <title>a small room</title>
-
   </head>
+
   <body>
-    <div id="storyboard">
-      <h3> A small room </h2>
-      <p>You enter a dimly lit room. There is only a table with a small candle and
-        three glass vials containing shimmering liquids. The only door in the room
-        is the one you entered through.<br><br>
+     <div class="homePage" id="startGame">
+      <div class="situationText">
+          <h2> A small room </h2>
+          <p>You enter a dimly lit room. There is only a table with a small candle and<br>
+          three glass vials containing shimmering liquids. The only door in the room<br>
+          is the one you entered through.
 
-        You approach the table and see a small sign beckoning you to choose one
-        liquid to drink. You take a closer look at the vials.<br><br>
+          <p>You approach the table and see a small sign beckoning you to choose one<br>
+          liquid to drink. You take a closer look at the vials.</p>
 
-        The first is red and smoky, the second like liquid gold, and the third
-        is an inky black.
-      </p>
+          <p>The first is red and smoky, the second like liquid gold, and the third<br>
+          is an inky black.</p>
+      </div>
+      <button type="button" class="btn1" onclick="redPotion()">Choose the red potion</button>
+      <button type="button" class="btn2" onclick="goldPotion()">Choose the gold potion</button>
+      <button type="button" class="btn3" onclick="blackPotion()">Choose the black potion</button>
     </div>
 
-    <button id="redPotion" onclick="redPotion()">Choose the red potion</button>
-    <button id="goldPotion" onclick="goldPotion()">Choose the gold potion</button>
-    <button id="blackPotion" onclick="blackPotion()">Choose the black potion</button>
+     <div class="situation hide" id="strengthChoice">
+        <div class="situationText">
+          <p>You feel a warmth radiate throughout your muscles. You clench your fists and <br>feel an overwhelming sense of power. </p>
 
-    <script src="js/main.js"></script>
+            <p>A door appears across the room and you walk towards it, flinging the door <br> open unintentionally with your newfound strength...</p>
+        </div>
+        <button type="button" class="btn5" onclick="insideCave()">Proceed through the door</button>
+        <button type="button" class="btn6" onclick="startOver()">Pick a different potion</button>
+    </div>
+
+    <div class="situation hide" id="magicChoice">
+        <div class="situationText">
+          <p>You feel a lightness float throughout your body.</p>
+          <p>A door appears across the room and you walk towards it, your feet gliding on the<br> door. The door opens
+            quietly as you get closer to it, without you lifting a finger...<br></p>
+        </div>
+        <button type="button" class="btn5" onclick="insideCave()">Proceed through the door</button>
+        <button type="button" class="btn6" onclick="startOver()">Pick a different potion</button>
+    </div>
+
+    <div class="situation hide" id="deathChoice">
+        <div class="situationText">
+            <p>You feel a cold chill run through you and start to shiver uncontrollably. </p>
+            <p>You fall to the floor as the light from the candle grows dimmer and your eyes close...</p>
+        </div>
+        <button type="button" class="btn6" onclick="startOver()">Pick a different potion</button>
+    </div>
+
+    <div class="situation hide" id="insidethecave">
+        <div class="situationText">
+            <h2>An underground quarry</h2>
+            <p>The door opens into a small underground quarry. Your feet crunch in stone gravel <br>
+              as you make your way through the room.</p>
+              <p>You hear a low grumbling sound, but you cannot see anything.</p>
+            <button type="button" class="choice" onclick="lightMatch()">Light a match</button>
+        </div>
+
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
