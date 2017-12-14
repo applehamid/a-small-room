@@ -8,6 +8,14 @@ body {
   display: none;
 }
 
+img {
+  max-height: 40%;
+  max-width: 40%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
 h2 {
   font-family: 'Cormorant Unicase';
   margin-top: 40px;
@@ -93,6 +101,7 @@ p {
 button {
   font-family: 'Cormorant Unicase';
   margin-top: 40px;
+  border: none;
   animation: fadein ease-in 4s;
   -moz-animation: fadein ease-in 4s;
   -webkit-animation: fadein ease-in 4s;

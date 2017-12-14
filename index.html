@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="assets/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Cormorant Unicase' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="images/candle-favicon.png">
     <title>a small room</title>
   </head>
 
@@ -39,7 +40,7 @@
     <div class="situation hide" id="magicChoice">
         <div class="situationText">
           <p>You feel a lightness float throughout your body.</p>
-          <p>A door appears across the room and you walk towards it, your feet gliding on the<br> door. The door opens
+          <p>A door appears across the room and you walk towards it, your feet gliding on the<br> floor. The door opens
             quietly as you get closer to it, without you lifting a finger...<br></p>
         </div>
         <button type="button" class="btn5" onclick="insideCave()">Proceed through the door</button>
@@ -59,10 +60,68 @@
             <h2>An underground quarry</h2>
             <p>The door opens into a small underground quarry. Your feet crunch in stone gravel <br>
               as you make your way through the room.</p>
-              <p>You hear a low grumbling sound, but you cannot see anything.</p>
-            <button type="button" class="choice" onclick="lightMatch()">Light a match</button>
+              <p>You hear a low grumbling sound, but you can barely see anything.</p>
         </div>
+            <button type="button" class="choice" onclick="lightMatch()">Light a match</button>
+    </div>
 
+    <div class="situation hide" id="chooseweapon">
+        <div class="situationText">
+          <p>Your match illuminates the the ground at your feet to reveal an assortment of tools.</p>
+          <p>Their handles look worn but they seem usable...</p>
+        </div>
+          <button type="button" class="choice" onclick="chooseMallet()">Pick up the mallet</button>
+          <button type="button" class="choice" onclick="chooseAxe()">Pick up the axe</button>
+          <button type="button" class="choice" onclick="chooseShovel()">Pick up the shovel</button>
+    </div>
+
+    <div class="situation hide weapon" id="choosemallet">
+      <div class="situationText">
+        <p>You pick up the mallet and continue to make your way through the quarry. <br>You feel smaller stones cascade down the quarry walls and land around your feet.</p>
+        <p>The grumbling is getting louder...</p>
+        <p>You come to a stone door with strange carvings on it. It looks like it can be pushed open. </p>
+      </div>
+        <button type="button" class="choice" onclick="openDoor()">Push the stone</button>
+    </div>
+
+    <div class="situation hide weapon" id="chooseaxe">
+      <div class="situationText">
+        <p>You pick up the axe and continue to make your way through the quarry. <br>You feel smaller stones cascade down the quarry walls and land around your feet.</p>
+        <p>The grumbling is getting louder...</p>
+        <p>You come to a stone door with strange carvings on it. It looks like it can be pushed open. </p>
+      </div>
+        <button type="button" class="choice" onclick="openDoor()">Push the stone</button>
+    </div>
+
+    <div class="situation hide weapon" id="chooseshovel">
+      <div class="situationText">
+        <p>You pick up the shovel and continue to make your way through the quarry. <br>You feel smaller stones cascade down the quarry walls and land around your feet.</p>
+        <p>The grumbling is getting louder...</p>
+        <p>You come to a stone door with strange carvings on it. It looks like it can be pushed open. </p>
+      </div>
+        <button type="button" class="choice" onclick="openDoor()">Push the stone</button>
+    </div>
+
+    <div class="situation hide" id="opendoor">
+      <div class="situationText">
+        <h2>A stone temple</h2>
+        <p>The stone door moves with a cloud of dust into what looks like a place of worship. <br>The same carvings on the door are present on the walls and columns around a<br> round dais in the center of the room. </p>
+        <p>The grumbling is louder than ever as you set eyes on a large stone formation that <br>appears to be moving slightly.</p>
+        <p>A great golem awakens as you walk into the temple and starts to move<br> towards you... </p>
+      </div>
+      <button type="button" class="choice" onclick="useWeapon()">Use your weapon</button>
+    </div>
+
+    <div class="situation hide" id="useweapon">
+      <div class="situationText">
+        <p>You grasp your weapon and take a swing as the golem lunges towards you. <br>The weapon sings as metal hits stone and it sinks in between the great golem's eyes.</p>
+        <p>The golem groans loudly before crumbling into a pile of stone at your feet.</p>
+        <p>The grumbling in the temple subsides.</p>
+      </div>
+      <button type="button" class="choice" onclick="startOver()">Start Over</button>
+    </div>
+
+    <img src="images/candle-bkg.jpg" id="imgbkg" align="right">
 
     <script src="assets/js/main.js"></script>
   </body>
