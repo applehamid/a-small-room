@@ -1,0 +1,143 @@
+body {
+  background: black;
+  color: white;
+
+}
+
+.hide {
+  display: none;
+}
+
+img {
+  max-height: 40%;
+  max-width: 40%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+h2 {
+  font-family: 'Cormorant Unicase';
+  margin-top: 40px;
+  animation: fadein 1s;
+  -moz-animation: fadein 1s;
+  -webkit-animation: fadein 1s;
+  -o-animation: fadein 1s;
+}
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+p {
+    font-family: 'Cormorant Unicase';
+    margin-top: 40px;
+    animation: fadein ease-in 2s;
+    -moz-animation: fadein ease-in 2s;
+    -webkit-animation: fadein ease-in 2s;
+    -o-animation: fadein ease-in 2s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+button {
+  font-family: 'Cormorant Unicase';
+  margin-top: 40px;
+  border: none;
+  animation: fadein ease-in 4s;
+  -moz-animation: fadein ease-in 4s;
+  -webkit-animation: fadein ease-in 4s;
+  -o-animation: fadein ease-in 4s;
+
+}
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+}
