@@ -112,7 +112,7 @@ function fadeIn(img) {
     img.style.opacity = +img.style.opacity + 0.001
 
     if (+img.style.opacity < 1) {
-      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 40)
+      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 70)
     }
   }
 
